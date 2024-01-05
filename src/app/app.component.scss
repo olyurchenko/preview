@@ -1,0 +1,95 @@
+.block{
+    display: block;
+}
+
+:host ::ng-deep .ql-mention-list-container {
+  max-width: 270px;
+  max-height: 200px;
+  overflow: scroll;
+  border: 1px solid #F0F0F0;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 12px 0 rgba(30, 30, 30, 0.08);
+}
+
+:host ::ng-deep .ql-mention-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+:host ::ng-deep .ql-mention-list-item {
+  cursor: pointer;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+  padding: 0 20px;
+  vertical-align: middle;
+}
+
+:host ::ng-deep .ql-mention-list-item.selected {
+  background-color: rgba(255, 137, 0, 0.3);
+  text-decoration: none;
+}
+
+:host ::ng-deep .mention {
+  height: 24px;
+  width: 65px;
+  border-radius: 6px;
+  background-color: #D3E1EB;
+  padding: 3px 0;
+  color: black;
+}
+
+:host ::ng-deep .mention>span {
+  margin: 0 3px;
+}
+
+
+:host ::ng-deep .mention__item {
+  padding: 4px;
+  border: 3px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+}
+
+:host ::ng-deep .mention__icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+:host ::ng-deep .mention__content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+:host ::ng-deep .mention__link{
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+:host ::ng-deep .mention__description{
+    line-height: 1em;
+    word-break: break-all;
+}
+
+:host ::ng-deep .mention__subtitle{
+    line-height: 1em;
+    font-size: 8px;
+    word-break: break-all;
+}
+
+:host ::ng-deep .mention__link{
+
+}
+
+:host ::ng-deep .mention__body{
+  color: blue;
+}

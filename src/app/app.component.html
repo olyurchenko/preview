@@ -1,0 +1,14 @@
+<quill-editor [(ngModel)]="value"
+  placeholder="Enter Text"
+  [modules]="quillConfig"
+  class='block'
+  [trimOnValidation]="true"
+  [maxLength]="MAX_LENGTH"
+  (onContentChanged)="change($event)"
+  (onBlur)="blur($event)"
+  (onFocus)="focus($event)"
+  (onEditorCreated)="init($event)"
+  >
+</quill-editor>
+<button (click)="handleCustomize()">do some magic</button>
+
